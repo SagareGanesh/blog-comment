@@ -1,19 +1,22 @@
-<p id="notice"><%= notice %></p>
+<% if notice %>
+  <div class="alert alert-success">
+    <p id="notice"><%= notice %></p>
+  </div>
+<% end %>
 
-<p>
-  <strong>Writer:</strong>
-  <%= @blog.writer %>
-</p>
+<div id="main-container" class="container">
+  <div class="page-header text-center">
+    <h1><%= @blog.heading.titleize %></h1>
+    <h5>Posted By - <%= @blog.writer %></h5>
+  </div>
 
-<p>
-  <strong>Content:</strong>
-  <%= @blog.content %>
-</p>
+  <div class="container">
+    <blockquote>
+      <p> <%= @blog.content %> </p>
+    </blockquote>
+  </div>
 
-<p>
-  <strong>Heading:</strong>
-  <%= @blog.heading %>
-</p>
-
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+  <hr>
+  <%= link_to 'Edit', edit_blog_path(@blog), class: "btn btn-primary" %>
+  <%= link_to 'Back', blogs_path, class: "btn btn-info" %>
+</div>
