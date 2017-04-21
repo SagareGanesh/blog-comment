@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # HTML Abstraction Markup Language - A Markup Haiku
 gem 'haml'
+gem 'haml-rails'
 # bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
 
