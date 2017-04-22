@@ -22,8 +22,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 # HTML Abstraction Markup Language - A Markup Haiku
-gem 'haml'
-gem 'haml-rails'
+gem 'city-state'
 # bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
 
